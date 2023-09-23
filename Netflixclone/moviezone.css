@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: black; 
+}
+.container{
+    display: flex;
+    margin: 1px;
+}
+/* Sign Out button ko red karo */
+.nav-link {
+    color: red;
+}
+
+.container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: 0.0;
+}
+
+
+.head img{
+    position: relative;
+    width: 11%;
+    z-index: 1;
+    margin-left: 19px;
+    margin-top: -15px;
+    margin-bottom: -14px;
+}
+.home-image{
+    background-image: url(assests/hoome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    filter: brightness();
+}
+.home-image-text{
+    color: aliceblue;
+    position: relative;
+    width: 30%;
+    top: 13em;
+    left: 3em;
+    z-index: 1;
+}
+.money{
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust the width of the search input */
+.form-control.w-100 {
+    width: 80%; /* You can adjust the width percentage as needed */
+    margin-right: 10px; /* Add some margin between the input and button */
+}
+
+/* Move the "TV Shows" and "Home" links to the side */
+.nav-item.ml-auto {
+    margin-left: 500px; /* Add some margin to push them to the right side */
+}
+
+/* Optional: Style for the active link */
+.nav-link.active {
+    font-weight: bold;
+}
+.play-button{
+    background-color: red;
+    color: black;
+    border-radius: 4px;
+    width: 70px;
+    padding: 5px 20px 0px;
+    font-size: 25px;
+}
+.play-button img{
+    margin-top: 0px;
+    padding-left: 5px;
+    width: 25px;
+    position: absolute;
+}
+.scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide the horizontal scrollbar */
+}
+
+.scroll-container .list-group-item {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.scroll-container .list-group-item:last-child {
+    margin-right: 0;
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+.scrollable-content {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Add scroll symbol */
+ .scroll-container {
+            width: 100%;
+            overflow-x: scroll; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks within the list items */
+        }
+
+        /* Individual list items */
+        .list-item {
+            display: inline-block;
+            width: 200px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            margin-right: 20px; /* Adjust the margin between items */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 150px;
+            font-size: 18px;
+            font-weight: bold;
+}
+
+.movie-list-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ccc #000; /* For Firefox */
+}
+
+@media screen and (max-width: 768px) {
+    .movie-list-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: thin; /* For Firefox */
+        scrollbar-color: #ccc #000; /* For Firefox */
+    }
+}
+.list-item {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.scroll-symbol {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* netflix original and top rated */
+.original{
+    color: aliceblue;
+    padding-left: 0px;
+
+}
+.original h3{
+    margin-top: 10px;
+}
+.original .no-title{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #fff;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-bottom: 19px;
+
+}
+.original .no{
+    display: flex;
+    height: 50vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -50px;
+    overflow-y: hidden;   
+}
+
+.original .no img{
+    width: 260px;
+    height: 380px;
+    margin:3px;
+    margin-left: 8px;
+    border-radius: 10px;
+
+}
+.original .no img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+html{
+    overflow:scroll;
+    overflow-x:hidden;
+}
+::-webkit-scrollbar{
+    width: 2px;
+    background: transparent;
+}
+/* comedy and romatic movies */
+.original1{
+    color: aliceblue;
+    padding-left: 0px;
+
+}
+.original1 h3{
+    margin-top: 10px;
+}
+.original1 .no-title{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #fff;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-bottom: 19px;
+
+}
+.original1 .no{
+    display: flex;
+    height: 40vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -50px;
+    overflow-y: hidden;   
+}
+
+.original1 .no img{
+    width: 160px;
+    height: 280px;
+    margin:3px;
+    margin-left: 8px;
+    border-radius: 10px;
+
+}
+.original1 .no img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
